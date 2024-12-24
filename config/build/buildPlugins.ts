@@ -1,5 +1,5 @@
 import HtmlWebpackPlugin from 'html-webpack-plugin'
-import { WebpackPluginInstance } from 'webpack'
+import webpack, { WebpackPluginInstance } from 'webpack'
 import { BuildOptions } from './types/config'
 
 const buildPlugins = ({ paths }: BuildOptions): WebpackPluginInstance[] => {
@@ -7,6 +7,7 @@ const buildPlugins = ({ paths }: BuildOptions): WebpackPluginInstance[] => {
 		new HtmlWebpackPlugin({
 			template: paths.html,
 		}),
+		new webpack.ProgressPlugin(),
 	]
 }
 
