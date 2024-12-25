@@ -19,7 +19,7 @@
 
 		// Указывает, что JSX синтаксис будет использоваться для React.
 		// Преобразует JSX в React.createElement.
-		"jsx": "react",
+		"jsx": "react-jsx",
 
 		// Позволяет включать JavaScript файлы в проект
 		// и компилировать их вместе с TypeScript.
