@@ -51,5 +51,9 @@
 		"compilerOptions": {
 			"module": "CommonJS"
 		}
-	}
+	},
+	// Добавлены исходники и тестовый файл
+	"include": ["src", "config/jest/setupTests.ts"],
+	// Исключены ненужные папки
+	"exclude": ["node_modules", "dist"]
 }

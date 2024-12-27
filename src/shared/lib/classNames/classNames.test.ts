@@ -1,16 +1,16 @@
 import { classNames } from './classNames'
 
 describe('classNames', () => {
-	test('with_only_first_param', () => {
+	test('should return only the first class name', () => {
 		expect(classNames('someClass')).toBe('someClass')
 	})
 
-	test('with_additional_class', () => {
+	test('should append additional classes', () => {
 		const expected = 'someClass class1 class2'
 		expect(classNames('someClass', {}, ['class1', 'class2'])).toBe(expected)
 	})
 
-	test('with_both_mods_is_true', () => {
+	test('should include all classes when modifiers are true', () => {
 		const expected = 'someClass class1 class2 hovered scrollable'
 		expect(
 			classNames('someClass', { hovered: true, scrollable: true }, [
@@ -20,7 +20,7 @@ describe('classNames', () => {
 		).toBe(expected)
 	})
 
-	test('with_one_mod_is_false', () => {
+	test('should exclude class when modifier is false', () => {
 		const expected = 'someClass class1 class2 hovered'
 		expect(
 			classNames('someClass', { hovered: true, scrollable: false }, [
@@ -30,7 +30,7 @@ describe('classNames', () => {
 		).toBe(expected)
 	})
 
-	test('with_one_mod_is_undefined', () => {
+	test('should exclude class when modifier is undefined', () => {
 		const expected = 'someClass class1 class2 hovered'
 		expect(
 			classNames('someClass', { hovered: true, scrollable: undefined }, [
