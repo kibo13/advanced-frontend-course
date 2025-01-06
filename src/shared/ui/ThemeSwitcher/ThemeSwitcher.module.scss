@@ -1,4 +1,6 @@
 .themeSwitcher > svg {
+	display: flex;
+	align-items: center;
 	width: var(--switcher-width);
 	height: var(--switcher-height);
 }
