@@ -3,9 +3,12 @@
 @use "./themes/light.scss" as *;
 @use "./themes/dark.scss" as *;
 
-.app {
+body {
 	min-height: 100vh;
 	font: var(--font-m);
+}
+
+.app {
 	background: var(--bg-color);
 	color: var(--primary-color);
 }
