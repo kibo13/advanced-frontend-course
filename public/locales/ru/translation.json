@@ -8,5 +8,7 @@
   "Error": "Ошибка",
   "Short lang": "RU",
   "Full lang": "Русский",
-  "Sign in": "Войти"
+  "Sign in": "Войти",
+  "Increment": "Увеличить",
+  "Decrement": "Уменьшить"
 }
