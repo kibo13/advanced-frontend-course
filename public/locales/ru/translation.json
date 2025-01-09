@@ -10,5 +10,7 @@
   "Full lang": "Русский",
   "Sign in": "Войти",
   "Increment": "Увеличить",
-  "Decrement": "Уменьшить"
+  "Decrement": "Уменьшить",
+  "Enter username": "Введите логин",
+  "Enter password": "Введите пароль"
 }
