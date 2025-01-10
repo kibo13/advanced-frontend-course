@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import React, { ErrorInfo, ReactNode, Suspense } from 'react'
 import { PageError } from 'widgets/PageError'
 
@@ -24,7 +25,6 @@ class ErrorBoundary extends React.Component<
 	}
 
 	componentDidCatch(error: Error, errorInfo: ErrorInfo) {
-		// You can also log the error to an error reporting service
 		console.log(error, errorInfo)
 	}
 
