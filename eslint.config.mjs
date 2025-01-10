@@ -45,7 +45,7 @@ export default [
 				'error',
 				{
 					markupOnly: true,
-					ignore: ['/'],
+					ignoreAttribute: ['data-testid'],
 				},
 			],
 		},
