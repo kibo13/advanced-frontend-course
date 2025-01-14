@@ -15,6 +15,13 @@
 		}
 	],
 	"profile": {
-		"name": "typicode"
+		"firstName": "Boris",
+		"lastName": "Kim",
+		"age": 34,
+		"currency": "KZT",
+		"country": "Kazakhstan",
+		"city": "Almaty",
+		"username": "admin",
+		"avatar": "https://cdn2.iconfinder.com/data/icons/superheroes-set/128/Batman-512.png"
 	}
 }

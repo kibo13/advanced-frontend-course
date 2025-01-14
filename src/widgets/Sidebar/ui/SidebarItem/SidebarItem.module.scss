@@ -1,0 +1,31 @@
+.sidebarItem {
+	padding: 10px;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.sidebarItemLink {
+	opacity: 1;
+}
+
+.sidebarItem > svg {
+	width: var(--link-icon-width);
+	height: var(--link-icon-heigh);
+	fill: var(--inverted-secondary-color);
+}
+
+.collapsed {
+	.sidebarItem {
+		padding: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.sidebarItemLink {
+		opacity: 0;
+		transition: 0.2s opacity;
+		width: 0;
+	}
+}
