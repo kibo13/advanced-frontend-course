@@ -25,6 +25,9 @@
 		// и компилировать их вместе с TypeScript.
 		"allowJs": true,
 
+		// turn on stricct mode
+		"strict": true,
+
 		// Указывает стратегию разрешения модулей
 		// (Node.js стиль модулей: ищет файлы в `node_modules`).
 		"moduleResolution": "node",
