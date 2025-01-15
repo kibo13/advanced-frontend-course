@@ -1,0 +1,19 @@
+.profileCard {
+	padding: 20px;
+	border: 1px solid var(--inverted-bg-color);
+}
+
+.profileCardHeader {
+	display: flex;
+}
+
+.profileCardBtn {
+	margin-left: auto;
+}
+
+.profileCardData {
+	margin-top: 30px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
