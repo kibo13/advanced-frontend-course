@@ -3,7 +3,7 @@ import { TestAsyncThunk } from 'shared/lib/tests/TestAsyncThunk/TestAsyncThunk'
 import { loginByUsername } from './loginByUsername'
 
 describe('loginByUsername.test', () => {
-	test('dispatches setUserData and returns fulfilled on successful login', async () => {
+	test('dispatches setAuthData and returns fulfilled on successful login', async () => {
 		const userValue = { username: 'admin', id: '1' }
 
 		const thunk = new TestAsyncThunk(loginByUsername)
@@ -14,7 +14,7 @@ describe('loginByUsername.test', () => {
 		})
 
 		expect(thunk.dispatch).toHaveBeenCalledWith(
-			userActions.setUserData(userValue)
+			userActions.setAuthData(userValue)
 		)
 		expect(thunk.dispatch).toHaveBeenCalledTimes(3)
 		expect(thunk.api.post).toHaveBeenCalled()
