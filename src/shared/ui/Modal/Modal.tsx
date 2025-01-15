@@ -1,6 +1,6 @@
 import { ReactNode, useCallback, useEffect, useRef, useState } from 'react'
 import classes from './Modal.module.scss'
-import { classNames } from 'shared/lib/classNames/classNames'
+import { classNames, Mods } from 'shared/lib/classNames/classNames'
 import { Portal } from 'shared/ui/Portal/Portal'
 
 interface ModalProps {
@@ -59,7 +59,7 @@ export const Modal = (props: ModalProps) => {
 		}
 	}, [isOpen, onKeyDown])
 
-	const mods: Record<string, boolean> = {
+	const mods: Mods = {
 		[classes.opened]: isOpen,
 		[classes.isClosing]: isClosing,
 	}
