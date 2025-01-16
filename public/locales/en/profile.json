@@ -1,6 +1,14 @@
 {
-	"Profile": "Profile",
-	"Edit": "Edit",
-	"First name": "First name",
-	"Last name": "Last name"
+  "Profile": "Profile",
+  "Edit": "Edit",
+  "First name": "First name",
+  "Last name": "Last name",
+  "Try reload page": "Try to reload page",
+  "Error upload": "Uploading profile's page error",
+  "Cancel": "Cancel",
+  "Save": "Save",
+  "Age": "Age",
+  "City": "City",
+  "profile.Username": "Username",
+  "profile.Avatar": "Avatar"
 }
